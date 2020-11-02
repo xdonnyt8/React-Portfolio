@@ -33,7 +33,6 @@ function App() {
             <MyProjects />
             <Footer />
           </Route>
-
         </Switch>
       </Router>
     </div>
