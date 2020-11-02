@@ -15,27 +15,29 @@ import ContactMe from "./components/ContactMe"
 function App() {
 
   return (
-    <div>
       <Router>
+            <div>
+
         <Switch>
           <Route exact path='/'>
             <Header />
             <AboutMe />
             <Footer />
           </Route>
-          <Route exact path='/contact'>
+          <Route path='/contact'>
             <Header />
             <ContactMe />
             <Footer />
           </Route>
-          <Route exact path='/projects'>
+          <Route path='/projects'>
             <Header />
             <MyProjects />
             <Footer />
           </Route>
         </Switch>
+        </div>
+
       </Router>
-    </div>
   );
 }
 
