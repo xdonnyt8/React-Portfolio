@@ -15,25 +15,25 @@ import ContactMe from "./components/ContactMe"
 function App() {
 
   return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path='/'>
             <Header />
             <AboutMe />
             <Footer />
           </Route>
-          <Route path='/contact'>
+          <Route exact path='/contact'>
             <Header />
             <ContactMe />
             <Footer />
           </Route>
-          <Route path='/projects'>
+          <Route exact path='/projects'>
             <Header />
             <MyProjects />
             <Footer />
           </Route>
         </Switch>
-      </Router>
+      </HashRouter>
   );
 }
 
