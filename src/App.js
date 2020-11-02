@@ -15,9 +15,7 @@ import ContactMe from "./components/ContactMe"
 function App() {
 
   return (
-      <Router>
-            <div>
-
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path='/'>
             <Header />
@@ -35,8 +33,6 @@ function App() {
             <Footer />
           </Route>
         </Switch>
-        </div>
-
       </Router>
   );
 }
