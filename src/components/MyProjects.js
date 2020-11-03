@@ -8,6 +8,7 @@ function MyProjects() {
 
         <Container>
             <br></br>
+            <Card.Header><h2>Here are some of the projects I have worked on</h2></Card.Header>
             <Row>
                 <Col>
                     <Card style={{ width: '18rem' }}>

@@ -15,7 +15,7 @@ import ContactMe from "./components/ContactMe"
 function App() {
 
   return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Switch>
           <Route exact path='/'>
             <Header />

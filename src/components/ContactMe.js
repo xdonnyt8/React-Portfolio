@@ -7,12 +7,11 @@ function ContactMe() {
     const [name, setName] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
-    const [email, setEmail] = useState('')
 
 
     const handleOnClick = e => {
         e.preventDefault();
-        window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`)
+        window.open(`mailto:mr.dontran@gmail.com?subject=${subject}&body=${name}: ${message}`)
     }
     return (
         <Container>
@@ -21,22 +20,22 @@ function ContactMe() {
                 <Col>
                 <Card>
                     <Card.Body>
-                    <Card.Title><h1>Contact Me @</h1></Card.Title>
+                    <Card.Title><h3>My links</h3></Card.Title>
                     <Card.Link href="https://github.com/xdonnyt8">GitHub</Card.Link>
                     <Card.Link href="https://www.linkedin.com/in/don-tran-073652b9/">Linkedin</Card.Link>
+                    <Card.Link href="https://www.facebook.com/PineappleS2">Facebook</Card.Link>
+                    <Card.Title><h3>Phone</h3></Card.Title>
+                    <Card.Text>703-507-3002 <br></br>
+                        (please leave me a message if I couldn't pick up your call)</Card.Text>
                     </Card.Body>
                 </Card>
                 </Col>
                 <Col>
                 <Form>
-                    <h4>You can send me a message using this form!</h4>
+                    <h4>You can send me an email using this form!</h4>
                     <Form.Group>
                         <Form.Label>Name:</Form.Label>
                         <Form.Control value={name} defaultValue="" type="text" onChange={e => setName(e.target.value)} />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Email:</Form.Label>
-                        <Form.Control value={email} defaultValue="" type="email" onChange={e => setEmail(e.target.value)} />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Subject:</Form.Label>
