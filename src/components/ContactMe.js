@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
-
+import "./style.css"
 
 function ContactMe() {
 
@@ -31,7 +31,9 @@ function ContactMe() {
                 </Card>
                 </Col>
                 <Col>
-                <Form>
+                <Card id="contact">
+                <Form >
+                    <Card.Body>
                     <h4>You can send me an email using this form!</h4>
                     <Form.Group>
                         <Form.Label>Name:</Form.Label>
@@ -46,7 +48,9 @@ function ContactMe() {
                         <Form.Control value={message} defaultValue="" as="textarea" row="5" onChange={e => setMessage(e.target.value)} />
                     </Form.Group>
                     <Button type="submit" onClick={handleOnClick}>Submit</Button>
+                    </Card.Body>
                 </Form>
+                </Card>
                 </Col>
             </Row>
 

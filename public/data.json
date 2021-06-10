@@ -1,0 +1,35 @@
+{
+    "portfolio": {
+        "projects": [
+          {
+            "title": "Date Match",
+            "category": "Date Match Clone built with SERN (mySQL, ExpressJS, ReactJS, NodeJS)",
+            "image": "date.png",
+            "url": "https://www.youtube.com/watch?v=BtJeH_-XYaA",
+            "demo": "https://www.youtube.com/watch?v=BtJeH_-XYaA"          
+        },
+          {
+            "title": "Employee Directory",
+            "category": "TikTok Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
+            "image": "tiktok-mern.jpeg",
+            "url": "https://www.youtube.com/watch?v=BtJeH_-XYaA",
+            "demo": "https://www.youtube.com/watch?v=BtJeH_-XYaA"          
+        },
+          {
+            "title": "Fitness Guru",
+            "category": "Facebook Clone built with ReactJS",
+            "image": "facebook-clone.png",
+            "url": "https://www.youtube.com/watch?v=BtJeH_-XYaA",
+            "demo": "https://www.youtube.com/watch?v=BtJeH_-XYaA"          
+        },
+          {
+            "title": "Password Generator",
+            "category": "A basic password generator using HTML",
+            "image": "password.png",
+            "url": "https://www.youtube.com/watch?v=BtJeH_-XYaA",
+            "demo": "https://www.youtube.com/watch?v=BtJeH_-XYaA"
+
+          }
+        ]
+      }
+}

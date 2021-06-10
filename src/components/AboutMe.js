@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Form, Button, Card, Image } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Card, Image, ProgressBar } from 'react-bootstrap';
+import ReactBootstrapSlider from 'react-bootstrap-slider';
 
 
 function AboutMe() {
@@ -11,7 +12,7 @@ function AboutMe() {
           <Card.Header><h3>Don Tran</h3></Card.Header>
           <Card.Body>
             <Card.Text>
-              I am an aspiring full stack web developer based in Springfield, Virginia.
+              I am an aspiring web developer who recent graduated from The George Washing University's boot camp on Full Stack Web Development.
       <br></br>
             </Card.Text>
           </Card.Body>
@@ -20,16 +21,63 @@ function AboutMe() {
         </Card>
         <br></br>
         <Card className="text-center">
-          <Card.Header><h3>Education</h3></Card.Header>
+          <Card.Header><h3>Skills</h3></Card.Header>
 
-          <Card.Body>
-            <Card.Title>Certification in Full Stack Web Development</Card.Title>
-            <Card.Text>
-              The George Washington University (May 2020-Oct 2020)
-            </Card.Text>
-            <Card.Title>Bachelor of Science in Chemistry</Card.Title>
-            <Card.Text>
-              Virginia Commonwealth University (Aug 2012 - Dec 2016)
+          <Card.Body className="text-center">
+
+            <Card.Text >
+              <Row className="justify-content-center">
+                <Col>
+                  JavaScript
+                  <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="8"/>
+                </Col>
+                <Col>
+                  HTML5
+                  <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="6"/>
+                </Col>
+                <Col>
+                  CSS
+                  <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="5"/>
+                </Col>
+              </Row>
+              <Row className="justify-content-center">
+                  <Col>
+                    Bootstrap
+                    <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="7"/>
+                  </Col>
+                  <Col>
+                    React.js
+                    <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="7"/>
+                  </Col>
+                  <Col>
+                    Express.js
+                    <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="10"/>
+                  </Col>
+              </Row>
+              <Row className="justify-content-center">
+              <Col>
+              MySQL
+              <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="5"/>
+                  </Col>
+                  <Col>
+                  MongoDB
+                  <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="3"/>
+                  </Col>
+                  <Col>
+                  Node.js
+                  <br></br>
+                <ReactBootstrapSlider disabled="disabled" value="7"/>
+                  </Col>
+              </Row>
+
             </Card.Text>
           </Card.Body>
           <Card.Footer className="text-muted"></Card.Footer>
@@ -45,7 +93,7 @@ function AboutMe() {
           <Card.Footer className="text-muted"></Card.Footer>
         </Card>
 
-        
+
 
       </Col>
     </Container>

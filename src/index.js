@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-slider/dist/css/bootstrap-slider.css"
+import $ from 'jquery';
+import Popper from 'popper.js';
 
 ReactDOM.render(
   <React.StrictMode>

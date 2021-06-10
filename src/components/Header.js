@@ -5,7 +5,7 @@ function Header() {
 
 
     return (
-        <Container>
+        <Container className="header" fluid>
 
             <Nav className="justify-content-center">
                 <Nav.Item>

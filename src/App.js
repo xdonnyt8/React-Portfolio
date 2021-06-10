@@ -32,6 +32,10 @@ function App() {
             <MyProjects />
             <Footer />
           </Route>
+          <Route exact path='/datematch'>
+<Header/>
+<Footer/>
+          </Route>
         </Switch>
       </HashRouter>
   );
